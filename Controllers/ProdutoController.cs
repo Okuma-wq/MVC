@@ -22,6 +22,11 @@ namespace MVC.Controllers
             
         }
 
+        public void Cadastrar(){
+
+            produto.Inserir(produtoView.CadastrarProduto());
+        }
+
 
 
     }
