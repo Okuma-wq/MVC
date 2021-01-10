@@ -1,18 +1,18 @@
 using System.Collections.Generic;
 using System.IO;
 
+
 namespace MVC.Models
 {
-    public class Produto
+    public class Cliente
     {
         public int Codigo { get; set; }
         public string Nome { get; set; }
-        public float Preco { get; set; }
+        public string CPF { get; set; }
         
-        private const string PATH = "Database/Produto.csv";
-
-        public Produto(){
-            
+        private const string PATH = "Database/Cliente.csv";
+        
+        public Cliente(){
             string pasta = PATH.Split("/")[0];
 
             if(!Directory.Exists(pasta)){
@@ -28,10 +28,9 @@ namespace MVC.Models
             }
         }
 
+        public List<Cliente> Ler(){
 
-        public List<Produto> Ler(){
-
-            List<Produto> produtos = new List<Produto>();
+            List<Cliente> clientes = new List<Cliente>();
 
             string[] linhas = File.ReadAllLines(PATH);
 
@@ -39,46 +38,46 @@ namespace MVC.Models
             {
                 string[] atributos = item.Split(";");
 
-                Produto prod = new Produto();
-                prod.Codigo = int.Parse(atributos[0]);
-                prod.Nome = atributos[1];
-                prod.Preco = float.Parse(atributos[2]);
+                Cliente cliente = new Cliente();
+                cliente.Codigo = int.Parse(atributos[0]);
+                cliente.Nome = atributos[1];
+                cliente.CPF = atributos[2];
 
-                produtos.Add(prod);
+                clientes.Add(cliente);
             }
 
 
 
-            return produtos;
+            return clientes;
         }
 
         public int ProximoCodigo(){
 
-            var produtos = Ler();
+            var clientes = Ler();
 
-            if (produtos.Count == 0)
+            if (clientes.Count == 0)
             {
                 return 1;
             }
             
-            var codigo = produtos[produtos.Count - 1].Codigo;
+            var codigo = clientes[clientes.Count - 1].Codigo;
 
             codigo ++;
              
             return codigo;
         }
 
-        public void Inserir(Produto produto){
+        public void Inserir(Cliente cliente){
 
-            produto.Codigo = ProximoCodigo();
+            cliente.Codigo = ProximoCodigo();
             
-            string[] linhas = {PrepararLinhasCSV(produto)};
+            string[] linhas = {PrepararLinhasCSV(cliente)};
 
             File.AppendAllLines(PATH, linhas);
         }
 
-        public string PrepararLinhasCSV(Produto prod){
-            return $"{prod.Codigo};{prod.Nome};{prod.Preco}";
+        public string PrepararLinhasCSV(Cliente cliente){
+            return $"{cliente.Codigo};{cliente.Nome};{cliente.CPF}";
         }
         
         

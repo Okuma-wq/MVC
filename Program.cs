@@ -1,6 +1,7 @@
 ﻿using System;
 using MVC.Controllers;
 using MVC.Models;
+using MVC.Views;
 
 namespace MVC
 {
@@ -8,9 +9,9 @@ namespace MVC
     {
         static void Main(string[] args)
         {
-            ProdutoController prod = new ProdutoController();
-            prod.Cadastrar();
-            prod.ListarProdutos();
+            OpcoesController opcoes = new OpcoesController();
+        
+            
         }
     }
 }
