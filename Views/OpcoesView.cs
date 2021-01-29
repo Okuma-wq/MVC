@@ -14,10 +14,11 @@ namespace MVC.Views
                 Console.WriteLine("2 - Listar Clientes");
                 Console.WriteLine("3 - Cadastrar Produto");
                 Console.WriteLine("4 - Listar Produtos");
+                Console.WriteLine("5 - Deletar Cliente");
                 Console.WriteLine("0 - Sair");
                 temp = int.TryParse(Console.ReadLine(),out resposta);
 
-                if (resposta < 0 || resposta > 5 || temp == false )
+                if (resposta < 0 || resposta > 6 || temp == false )
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"");
@@ -27,7 +28,7 @@ namespace MVC.Views
                 }
                 
                 
-            }while(resposta < 0 || resposta > 5 || temp == false);
+            }while(resposta < 0 || resposta > 6 || temp == false);
 
             return resposta;
         }

@@ -11,3 +11,16 @@ C:\Users\pedro\Desktop\Projetos\MVC\obj\Debug\netcoreapp3.1\MVC.csproj.CoreCompi
 C:\Users\pedro\Desktop\Projetos\MVC\obj\Debug\netcoreapp3.1\MVC.dll
 C:\Users\pedro\Desktop\Projetos\MVC\obj\Debug\netcoreapp3.1\MVC.pdb
 C:\Users\pedro\Desktop\Projetos\MVC\obj\Debug\netcoreapp3.1\MVC.genruntimeconfig.cache
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\bin\Debug\netcoreapp3.1\MVC.exe
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\bin\Debug\netcoreapp3.1\MVC.deps.json
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\bin\Debug\netcoreapp3.1\MVC.runtimeconfig.json
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\bin\Debug\netcoreapp3.1\MVC.runtimeconfig.dev.json
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\bin\Debug\netcoreapp3.1\MVC.dll
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\bin\Debug\netcoreapp3.1\MVC.pdb
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\obj\Debug\netcoreapp3.1\MVC.csprojAssemblyReference.cache
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\obj\Debug\netcoreapp3.1\MVC.AssemblyInfoInputs.cache
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\obj\Debug\netcoreapp3.1\MVC.AssemblyInfo.cs
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\obj\Debug\netcoreapp3.1\MVC.csproj.CoreCompileInputs.cache
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\obj\Debug\netcoreapp3.1\MVC.dll
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\obj\Debug\netcoreapp3.1\MVC.pdb
+C:\Users\FIC\Desktop\Pedro Okuma - Tarde\MVC\obj\Debug\netcoreapp3.1\MVC.genruntimeconfig.cache

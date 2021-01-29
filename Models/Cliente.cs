@@ -79,7 +79,41 @@ namespace MVC.Models
         public string PrepararLinhasCSV(Cliente cliente){
             return $"{cliente.Codigo};{cliente.Nome};{cliente.CPF}";
         }
+
+        public List<string> ReadAllLinesCSV(string path){
+            
+            List<string> linhas = new List<string>();
+
+            using (StreamReader file = new StreamReader(path))
+            {
+                string linha;
+                while ((linha = file.ReadLine()) != null)
+                {
+                    linhas.Add(linha);
+                }
+            }
+
+            return linhas;
+        }
+
+        public void RewriteCSV(string path, List<string> linhas)
+        {
+            using(StreamWriter output = new StreamWriter(path))
+            {
+                foreach (var item in linhas)
+                {
+                    output.Write(item + '\n');
+                }
+            }            
+        }
         
+        public void Deletar(int _cod){
+            List<string> linhas = ReadAllLinesCSV(PATH);
+
+            linhas.RemoveAll(x => x.Split(";")[0] == _cod.ToString());
+
+            RewriteCSV(PATH, linhas);
+        }
         
         
         

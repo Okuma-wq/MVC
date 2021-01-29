@@ -18,6 +18,10 @@ namespace MVC.Controllers
         public void ListarClientes(){
             clienteView.Listar(cliente.Ler());
         }
+
+        public void Delete(){
+            cliente.Deletar(clienteView.Deletar());
+        }
         //Retornar Lista de Cliente
         //Apagar Cliente
         //Editar Cliente

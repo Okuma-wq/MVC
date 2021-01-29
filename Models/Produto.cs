@@ -52,6 +52,8 @@ namespace MVC.Models
             return produtos;
         }
 
+        
+
         public int ProximoCodigo(){
 
             var produtos = Ler();
@@ -67,6 +69,8 @@ namespace MVC.Models
              
             return codigo;
         }
+
+        
 
         public void Inserir(Produto produto){
 

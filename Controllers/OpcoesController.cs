@@ -30,6 +30,9 @@ namespace MVC.Controllers
                     case 4:
                         prod.ListarProdutos();
                         break;
+                    case 5:
+                        cliente.Delete();
+                        break;
                     case 0:
                         Console.WriteLine("Obrigado por usar nossa aplicação");
                         break;

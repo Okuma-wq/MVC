@@ -43,5 +43,12 @@ namespace MVC.Views
 
             
         }
+
+        public int Deletar(){
+            Console.WriteLine("Digite o código do cliente que deseja apagar:");
+            int cod = int.Parse(Console.ReadLine());
+
+            return cod;
+        } 
     }
 }
